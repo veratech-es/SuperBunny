@@ -1,0 +1,392 @@
+{
+	"_type": "COMPOSITION",
+	"name": {
+		"_type": "DV_TEXT",
+		"value": "eligibility"
+	},
+	"archetype_details": {
+		"archetype_id": {
+			"value": "openEHR-EHR-SECTION.adhoc.v1"
+		},
+		"template_id": {
+			"value": "eligibility"
+		},
+		"rm_version": "1.0.4"
+	},
+	"language": {
+		"_type": "CODE_PHRASE",
+		"terminology_id": {
+			"_type": "TERMINOLOGY_ID",
+			"value": "ISO_639-1"
+		},
+		"code_string": "en"
+	},
+	"territory": {
+		"_type": "CODE_PHRASE",
+		"terminology_id": {
+			"_type": "TERMINOLOGY_ID",
+			"value": "ISO_3166-1"
+		},
+		"code_string": "ES"
+	},
+	"category": {
+		"_type": "DV_CODED_TEXT",
+		"value": "event",
+		"defining_code": {
+			"_type": "CODE_PHRASE",
+			"terminology_id": {
+				"_type": "TERMINOLOGY_ID",
+				"value": "openehr"
+			},
+			"code_string": "433"
+		}
+	},
+	"composer": {
+		"_type": "PARTY_IDENTIFIED",
+		"name": "synpuf"
+	},
+	"context": {
+		"_type": "EVENT_CONTEXT",
+		"start_time": {
+			"_type": "DV_DATE_TIME",
+			"value": "2024-05-23T12:13:41.7113294"
+		},
+		"setting": {
+			"_type": "DV_CODED_TEXT",
+			"value": "primary medical care",
+			"defining_code": {
+				"_type": "CODE_PHRASE",
+				"terminology_id": {
+					"_type": "TERMINOLOGY_ID",
+					"value": "openehr"
+				},
+				"code_string": "228"
+			}
+		}
+	},
+	"content": [{
+			"_type": "SECTION",
+			"name": {
+				"_type": "DV_TEXT",
+				"value": "Criteria"
+			},
+			"items": [{
+					"_type": "OBSERVATION",
+					"name": {
+						"_type": "DV_TEXT",
+						"value": "Age assertion"
+					},
+					"archetype_details": {
+						"archetype_id": {
+							"value": "openEHR-EHR-OBSERVATION.age_assertion.v1"
+						},
+						"template_id": {
+							"value": "eligibility"
+						},
+						"rm_version": "1.0.4"
+					},
+					"language": {
+						"_type": "CODE_PHRASE",
+						"terminology_id": {
+							"_type": "TERMINOLOGY_ID",
+							"value": "ISO_639-1"
+						},
+						"code_string": "en"
+					},
+					"encoding": {
+						"_type": "CODE_PHRASE",
+						"terminology_id": {
+							"_type": "TERMINOLOGY_ID",
+							"value": "IANA_character-sets"
+						},
+						"code_string": "UTF-8"
+					},
+					"subject": {
+						"_type": "PARTY_SELF",
+						"external_ref": {
+							"_type": "PARTY_REF",
+							"namespace": "default",
+							"type": "PERSON",
+							"id": {
+								"_type": "HIER_OBJECT_ID",
+								"value": "ab436b18-6e72-3f96-834d-6d64707e2f64"
+							}
+						}
+					},
+					"data": {
+						"name": {
+							"_type": "DV_TEXT",
+							"value": "Event series"
+						},
+						"origin": {
+							"_type": "DV_DATE_TIME",
+							"value": "2024-05-23T12:13:41.7206152"
+						},
+						"events": [{
+								"_type": "POINT_EVENT",
+								"name": {
+									"_type": "DV_TEXT",
+									"value": "Point in time event"
+								},
+								"time": {
+									"_type": "DV_DATE_TIME",
+									"value": "2024-05-23T12:13:41.7206152"
+								},
+								"data": {
+									"_type": "ITEM_TREE",
+									"name": {
+										"_type": "DV_TEXT",
+										"value": "Tree"
+									},
+									"items": [{
+											"_type": "ELEMENT",
+											"name": {
+												"_type": "DV_TEXT",
+												"value": "Chronological age"
+											},
+											"value": {
+												"_type": "DV_QUANTITY",
+												"units": "a",
+												"magnitude": 101
+											},
+											"archetype_node_id": "at0004"
+										}
+									],
+									"archetype_node_id": "at0003"
+								},
+								"archetype_node_id": "at0002"
+							}
+						],
+						"archetype_node_id": "at0001"
+					},
+					"archetype_node_id": "openEHR-EHR-OBSERVATION.age_assertion.v1"
+				}, {
+					"_type": "EVALUATION",
+					"name": {
+						"_type": "DV_TEXT",
+						"value": "Problem/Diagnosis"
+					},
+					"archetype_details": {
+						"archetype_id": {
+							"value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+						},
+						"template_id": {
+							"value": "eligibility"
+						},
+						"rm_version": "1.0.4"
+					},
+					"language": {
+						"_type": "CODE_PHRASE",
+						"terminology_id": {
+							"_type": "TERMINOLOGY_ID",
+							"value": "ISO_639-1"
+						},
+						"code_string": "en"
+					},
+					"encoding": {
+						"_type": "CODE_PHRASE",
+						"terminology_id": {
+							"_type": "TERMINOLOGY_ID",
+							"value": "IANA_character-sets"
+						},
+						"code_string": "UTF-8"
+					},
+					"subject": {
+						"_type": "PARTY_SELF",
+						"external_ref": {
+							"_type": "PARTY_REF",
+							"namespace": "default",
+							"type": "PERSON",
+							"id": {
+								"_type": "HIER_OBJECT_ID",
+								"value": "ab436b18-6e72-3f96-834d-6d64707e2f64"
+							}
+						}
+					},
+					"data": {
+						"_type": "ITEM_TREE",
+						"name": {
+							"_type": "DV_TEXT",
+							"value": "structure"
+						},
+						"items": [{
+								"_type": "ELEMENT",
+								"name": {
+									"_type": "DV_TEXT",
+									"value": "Problem/Diagnosis name"
+								},
+								"value": {
+									"_type": "DV_CODED_TEXT",
+									"value": "History of heart failure",
+									"defining_code": {
+										"_type": "CODE_PHRASE",
+										"terminology_id": {
+											"_type": "TERMINOLOGY_ID",
+											"value": "SNOMED-CT"
+										},
+										"code_string": "161505003"
+									}
+								},
+								"archetype_node_id": "at0002"
+							}
+						],
+						"archetype_node_id": "at0001"
+					},
+					"archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+				}, {
+					"_type": "EVALUATION",
+					"name": {
+						"_type": "DV_TEXT",
+						"value": "Problem/Diagnosis"
+					},
+					"archetype_details": {
+						"archetype_id": {
+							"value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+						},
+						"template_id": {
+							"value": "eligibility"
+						},
+						"rm_version": "1.0.4"
+					},
+					"language": {
+						"_type": "CODE_PHRASE",
+						"terminology_id": {
+							"_type": "TERMINOLOGY_ID",
+							"value": "ISO_639-1"
+						},
+						"code_string": "en"
+					},
+					"encoding": {
+						"_type": "CODE_PHRASE",
+						"terminology_id": {
+							"_type": "TERMINOLOGY_ID",
+							"value": "IANA_character-sets"
+						},
+						"code_string": "UTF-8"
+					},
+					"subject": {
+						"_type": "PARTY_SELF",
+						"external_ref": {
+							"_type": "PARTY_REF",
+							"namespace": "default",
+							"type": "PERSON",
+							"id": {
+								"_type": "HIER_OBJECT_ID",
+								"value": "ab436b18-6e72-3f96-834d-6d64707e2f64"
+							}
+						}
+					},
+					"data": {
+						"_type": "ITEM_TREE",
+						"name": {
+							"_type": "DV_TEXT",
+							"value": "structure"
+						},
+						"items": [{
+								"_type": "ELEMENT",
+								"name": {
+									"_type": "DV_TEXT",
+									"value": "Problem/Diagnosis name"
+								},
+								"value": {
+									"_type": "DV_CODED_TEXT",
+									"value": "History of osteoporosis",
+									"defining_code": {
+										"_type": "CODE_PHRASE",
+										"terminology_id": {
+											"_type": "TERMINOLOGY_ID",
+											"value": "SNOMED-CT"
+										},
+										"code_string": "473120007"
+									}
+								},
+								"archetype_node_id": "at0002"
+							}
+						],
+						"archetype_node_id": "at0001"
+					},
+					"archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+				}, {
+					"_type": "EVALUATION",
+					"name": {
+						"_type": "DV_TEXT",
+						"value": "Gender"
+					},
+					"archetype_details": {
+						"archetype_id": {
+							"value": "openEHR-EHR-EVALUATION.gender.v1"
+						},
+						"template_id": {
+							"value": "eligibility"
+						},
+						"rm_version": "1.0.4"
+					},
+					"language": {
+						"_type": "CODE_PHRASE",
+						"terminology_id": {
+							"_type": "TERMINOLOGY_ID",
+							"value": "ISO_639-1"
+						},
+						"code_string": "en"
+					},
+					"encoding": {
+						"_type": "CODE_PHRASE",
+						"terminology_id": {
+							"_type": "TERMINOLOGY_ID",
+							"value": "IANA_character-sets"
+						},
+						"code_string": "UTF-8"
+					},
+					"subject": {
+						"_type": "PARTY_SELF",
+						"external_ref": {
+							"_type": "PARTY_REF",
+							"namespace": "default",
+							"type": "PERSON",
+							"id": {
+								"_type": "HIER_OBJECT_ID",
+								"value": "ab436b18-6e72-3f96-834d-6d64707e2f64"
+							}
+						}
+					},
+					"data": {
+						"_type": "ITEM_TREE",
+						"name": {
+							"_type": "DV_TEXT",
+							"value": "Tree"
+						},
+						"items": [{
+								"_type": "ELEMENT",
+								"name": {
+									"_type": "DV_TEXT",
+									"value": "Administrative gender"
+								},
+								"value": {
+									"_type": "DV_CODED_TEXT",
+									"value": "Male",
+									"defining_code": {
+										"_type": "CODE_PHRASE",
+										"terminology_id": {
+											"_type": "TERMINOLOGY_ID",
+											"value": "http://hl7.org/fhir/administrative-gender"
+										},
+										"code_string": "male"
+									}
+								},
+								"archetype_node_id": "at0022"
+							}
+						],
+						"archetype_node_id": "at0002"
+					},
+					"archetype_node_id": "openEHR-EHR-EVALUATION.gender.v1"
+				}
+			],
+			"archetype_node_id": "openEHR-EHR-SECTION.adhoc.v1"
+		}
+	],
+	"archetype_node_id": "openEHR-EHR-COMPOSITION.review.v0",
+	"uid": {
+		"_type": "OBJECT_VERSION_ID",
+		"value": "0d663313-120c-4939-b1b2-b89366f34819::local.ehrbase.org::1"
+	}
+}
